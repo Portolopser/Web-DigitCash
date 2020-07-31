@@ -1,4 +1,4 @@
-Web Portfolio Personal
+Web Portfolio Personal (Digitcash)
 
 Esta maqueta es una pequeña parte de mi portfolio personal, hecha usando HTML5, CSS3 y JavaScript.
 
