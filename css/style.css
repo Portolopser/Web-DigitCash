@@ -1,0 +1,502 @@
+* {
+    font-family: "Arial";
+}
+
+#linksresponsive {
+    display: none;
+}
+
+#linksresponsive a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: .5em 0em;
+    text-decoration: none;
+    float: left;
+    overflow: hidden;
+    font-size: 24px;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+}
+
+#linksresponsive a:hover:not(.active) {
+    background-color: #ff6700;
+}
+
+#linksresponsive .active {
+    background-color: #ff6700;
+    color: #ffffff;
+}
+
+.fa.fa-bars {
+    display: none;
+    color: #ff6700;
+}
+
+body {
+    margin: 0;
+}
+
+.topnav {
+    position: relative;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.topnav img {
+    float: left;
+}
+
+.icon {
+    float: right;
+}
+
+.topnav #links {
+    position: relative;
+}
+
+.topnav #links a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    float: left;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.topnav #links a:hover:not(.active) {
+    background-color: #4c4c4c;
+    transition: ease-in;
+    -webkit-transition: background-color 1s ease-in;
+    -moz-transition: background-color 1s ease-in;
+    -o-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
+
+.active {
+    background-color: #ff6700;
+    transition: ease-in;
+    -webkit-transition: background-color 1s ease-in;
+    -moz-transition: background-color 1s ease-in;
+    -o-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
+
+#first-container {
+    position: relative;
+    height: 500px;
+}
+
+#first-container::before {
+    content: "";
+    position: absolute;
+    background-image: url('../media/image1.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+
+#first-container p {
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 30%;
+    margin-top: 2.5em;
+    margin-left: 3.5em;
+}
+
+#second-container,
+#third-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+#second-container .card {
+    width: 25%;
+    background-color: #ff6700;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+#second-container .card p:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#second-container .card p:nth-child(3) {
+    font-size: 18px;
+    padding: 0 3em;
+    height: 120px;
+}
+
+#second-container .card:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: ease-in;
+    -webkit-transition: background-color 1s ease-in;
+    -moz-transition: background-color 1s ease-in;
+    -o-transition: background-color 1s ease-in;
+    transition: background-color 1s ease-in;
+}
+
+#second-container .card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #000000;
+    padding: 10px;
+    top: .5em;
+    position: relative;
+    transition: all 1s;
+}
+
+#second-container .card a span {
+    position: relative;
+    z-index: 2;
+}
+
+#second-container .card a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: grey;
+    transition: all 1s;
+}
+
+#second-container .card a:hover {
+    color: #fff;
+}
+
+#second-container .card a:hover:after {
+    width: 100%;
+}
+
+
+#third-container .card {
+    width: 25%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    -webkit-transition: box-shadow 2s;
+    transition: box-shadow 2s;
+    cursor: pointer;
+}
+
+#third-container .card:hover {
+    box-shadow: inset 0 0 0 4000px rgba(255, 103, 0, .5);
+}
+
+#third-container .card:nth-child(1) {
+    background-image: url('../media/h&m.jpg');
+    background-size: cover;
+}
+
+#third-container .card:nth-child(2) {
+    background-image: url('../media/payingwcreditcard.jpg');
+    background-size: cover;
+}
+
+#third-container .card:nth-child(3) {
+    background-image: url('../media/leoraklapper.jpg');
+    background-size: cover;
+}
+
+#third-container .card:nth-child(4) {
+    background-image: url('../media/factory.jpg');
+    background-size: cover;
+}
+
+#third-container .title {
+    color: #ffffff;
+    padding-bottom: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#third-container p {
+    color: #ffffff;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+#third-container .card p:nth-child(2) {
+    height: 100px;
+}
+
+#third-container a {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#fourth-container {
+    display: flex;
+    background-color: black;
+}
+
+#fourth-container .container {
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+}
+
+#fourth-container .container h2 {
+    font-weight: 100;
+    padding: 10px;
+}
+
+#fourth-container .container p {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+#fourth-container input {
+    width: 40%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#fourth-container button {
+    width: auto;
+    font-size: 18px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#fourth-container button:hover {
+    background-color: #ff6700;
+    color: #ffffff;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+
+#social-media {
+    position: relative;
+    top: 1em;
+}
+
+#social-media img {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#fifth-container {
+    text-align: center;
+    background-color: #ff6700;
+    padding-top: 2em;
+    padding-bottom: 5em;
+}
+
+#sixth-container {
+    background-color: #000000;
+}
+
+.row ul {
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+}
+
+.row li {
+    display: inline-block;
+    font-size: 22px;
+    padding: 3em 4em;
+}
+
+.row li a {
+    text-decoration: none;
+    border-bottom: 5px solid #4c4c4c;
+    color: #ffffff;
+}
+
+.row li a:hover {
+    transition: ease-in 1s;
+    border-bottom: 5px solid #ffffff;
+    color: #ffffff;
+}
+
+#sixth-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sixth-container p {
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 1480px) {
+    .row li {
+        padding: 3em 2em;
+    }
+}
+
+@media (max-width: 1296px) {
+    #first-container p {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1176px) {
+    #second-container .card p:nth-child(3) {
+        height: 125px;
+        padding: 0 1em;
+    }
+
+    #third-container p {
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 999px) {
+    .fa.fa-bars {
+        font-size: 30px;
+        display: block;
+        padding: .5em 0;
+    }
+
+    .fa.fa-bars:active {
+        color: #ffffff;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .icon {
+        margin-right: 20px;
+    }
+
+    #links {
+        display: none;
+    }
+}
+
+@media (max-width: 970px) {
+    #first-container p {
+        width: 50%;
+    }
+}
+
+@media (max-width: 950px) {
+    #third-container .card p:nth-child(2) {
+        height: 130px;
+    }
+}
+
+@media (max-width: 890px) {
+    #second-container .card p:nth-child(3) {
+        height: 150px;
+    }
+}
+
+@media (max-width: 830px) {
+    #fourth-container {
+        display: block;
+    }
+
+    #fourth-container .container {
+        width: 100%;
+    }
+
+    #fourth-container .container h2 {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    #social-media {
+        padding-bottom: 3em;
+    }
+}
+
+@media (max-width: 800px) {
+    #second-container {
+        display: inline-block;
+    }
+
+    #second-container .card {
+        width: 100%;
+    }
+
+    #second-container .card p:nth-child(3) {
+        height: auto;
+    }
+
+    #third-container .card p:nth-child(2) {
+        height: 60px;
+    }
+
+    #third-container {
+        display: inline-block;
+    }
+
+    #third-container .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 780px) {
+    #first-container p {
+        width: 70%;
+        font-size: 35px;
+        margin-top: 2.5em;
+        margin-left: 2.5em;
+    }
+}
+
+@media (max-width: 590px) {
+    #third-container .card p:nth-child(2) {
+        height: 100px;
+    }
+}
+
+@media (max-width: 430px) {
+    #first-container p {
+        width: 85%;
+        font-size: 30px;
+        margin-top: 4.5em;
+        margin-left: 1.5em;
+    }
+}
+
+@media (max-width: 395px) {
+    #sixth-container .row li {
+        display: block;
+    }
+}
+
+@media (max-width: 330px) {
+    #social-media a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #sixth-container .row li {
+        padding: 30px;
+    }
+}
